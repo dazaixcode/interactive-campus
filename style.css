@@ -108,7 +108,7 @@ body {
 .banner-text {
   position: relative;
   z-index: 2;
-  color: dark-blue; /* You can change this based on visibility */
+  color: #001f3f; 
 }
 
 .banner-text h2 {
