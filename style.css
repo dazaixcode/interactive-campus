@@ -108,7 +108,7 @@ body {
 .banner-text {
   position: relative;
   z-index: 2;
-  color: #001f3f; 
+  color: rgb(8, 36, 246);
 }
 
 .banner-text h2 {
