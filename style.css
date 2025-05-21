@@ -18,7 +18,7 @@ body {
   color: #fff;
   padding: 15px 30px;
   display: flex;
-  justify-content: space-between;
+  flex-direction: column; /* changed to column to stack logo and nav */
   align-items: center;
   flex-wrap: wrap;
 }
@@ -34,12 +34,13 @@ body {
   border-radius: 10px;
 }
 
-/* === NAVIGATION BAR === */
-/* CSS */
+/* Navigation container */
 .nav-container {
-  background-color: transparent; /* Or your site’s main background */
+  width: 100%;
+  background-color: #004080; /* Match the header background */
 }
 
+/* Navigation bar */
 .nav {
   display: flex;
   gap: 40px;
@@ -48,7 +49,7 @@ body {
   position: relative;
   z-index: 1000;
   border-bottom: 2px solid #00cccc;
-  background-color: transparent;
+  background-color: #004080; /* Match the header background */
   justify-content: center;
 }
 
