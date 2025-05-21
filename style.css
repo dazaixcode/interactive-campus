@@ -37,13 +37,16 @@ body {
 /* === NAVIGATION BAR === */
 .nav {
   display: flex;
-  gap: 20px;
+  gap: 40px;
   flex-wrap: wrap;
-  background-color: #111;
-  padding: 10px 20px;
+  padding: 14px 20px;
   position: relative;
-  z-index: 1000; /* BRINGS HEADER TO FRONT */
+  z-index: 1000;
+  border-bottom: 2px solid #00cccc; /* Bottom line instead of background */
+  background-color: transparent; /* No background */
+  justify-content: center;
 }
+
 
 /* Nav links */
 .nav a {
@@ -66,14 +69,14 @@ body {
 .sub-dropdown-content {
   display: none;
   position: absolute;
-  background-color: white;
-  color: black;
+  background-color: white; /* Keep or change to transparent if needed */
   min-width: 180px;
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
-  z-index: 2000; /* ABOVE OTHER SECTIONS */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  z-index: 2000;
   top: 100%;
   left: 0;
 }
+
 
 .sub-dropdown:hover .sub-dropdown-content {
   display: block;
