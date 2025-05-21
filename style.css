@@ -35,6 +35,11 @@ body {
 }
 
 /* === NAVIGATION BAR === */
+/* CSS */
+.nav-container {
+  background-color: transparent; /* Or your site’s main background */
+}
+
 .nav {
   display: flex;
   gap: 40px;
@@ -42,13 +47,11 @@ body {
   padding: 14px 20px;
   position: relative;
   z-index: 1000;
-  border-bottom: 2px solid #00cccc; /* Bottom line instead of background */
-  background-color: transparent; /* No background */
+  border-bottom: 2px solid #00cccc;
+  background-color: transparent;
   justify-content: center;
 }
 
-
-/* Nav links */
 .nav a {
   color: rgb(30, 208, 178);
   text-decoration: none;
@@ -61,7 +64,6 @@ body {
   color: #ffdd57;
 }
 
-/* === DROPDOWN === */
 .sub-dropdown {
   position: relative;
 }
@@ -69,14 +71,13 @@ body {
 .sub-dropdown-content {
   display: none;
   position: absolute;
-  background-color: white; /* Keep or change to transparent if needed */
+  background-color: white;
   min-width: 180px;
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
   z-index: 2000;
   top: 100%;
   left: 0;
 }
-
 
 .sub-dropdown:hover .sub-dropdown-content {
   display: block;
