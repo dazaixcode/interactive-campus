@@ -34,16 +34,18 @@ body {
   border-radius: 10px;
 }
 
+/* === NAVIGATION BAR === */
 .nav {
   display: flex;
   gap: 20px;
   flex-wrap: wrap;
-  background-color: #111; /* Keeps dropdown visible */
+  background-color: #111;
   padding: 10px 20px;
   position: relative;
-  z-index: 2;
+  z-index: 1000; /* BRINGS HEADER TO FRONT */
 }
 
+/* Nav links */
 .nav a {
   color: rgb(30, 208, 178);
   text-decoration: none;
@@ -56,6 +58,7 @@ body {
   color: #ffdd57;
 }
 
+/* === DROPDOWN === */
 .sub-dropdown {
   position: relative;
 }
@@ -67,7 +70,7 @@ body {
   color: black;
   min-width: 180px;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
-  z-index: 999;
+  z-index: 2000; /* ABOVE OTHER SECTIONS */
   top: 100%;
   left: 0;
 }
